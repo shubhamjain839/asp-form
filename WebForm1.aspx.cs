@@ -19,7 +19,7 @@ namespace _26_08
 
         protected void save_Click(object sender, EventArgs e)
         {
-            string connectionString = "Data Source=LAPTOP-URGA7AI6\\SQLEXPRESS;Initial Catalog=data;User Id=shubham;password=Sanzu143";
+            string connectionString = "Data Source=<your server address>;Initial Catalog=<database name>;User Id=<user id>;password=<password>";
             SqlConnection sqlcon = new SqlConnection(connectionString);
             sqlcon.Open();
             SqlCommand cmd = new SqlCommand();
